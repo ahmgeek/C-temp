@@ -1,4 +1,5 @@
-.gitignore
-makefile
+#ignore object files
 *.o
-!*.*
+
+#igonre the binary directory
+Binaries
