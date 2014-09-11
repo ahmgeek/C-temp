@@ -1,4 +1,6 @@
 #ignore object files
 *.o
 
-#igonre the binary directory
+#igonre the binary,Makefiles directories
+Binaries/
+MAKEFILES/
