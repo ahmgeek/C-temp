@@ -1,0 +1,6 @@
+#ignore object files
+*.o
+*.swp
+#igonre the binary,Makefiles directories
+binary/
+MAKEFILES/
