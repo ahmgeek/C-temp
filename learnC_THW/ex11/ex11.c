@@ -14,10 +14,12 @@ int main(int argc, char *argv[])
       "Washington", "Texas"
   };
 
+  char **states_ptr = states;
+
   i = 0;
   int num_states = 4;
   while(i < num_states) {
-      printf("state %d: %s\n", i, states[i]);
+      printf("state %d: %s\n", i, states_ptr[i]);
       i++;
   }
 
@@ -26,7 +28,7 @@ int main(int argc, char *argv[])
   while(i < argc){
     if(argc >= 1 && argc < 6){
       states[i] = argv[i];
-      printf("states assignation: %s\n", states[i]);
+      printf("states assignation: %s\n", *states_ptr++);
     }
     i++;
   }
